@@ -1,0 +1,30 @@
+.video {
+  align-self: stretch;
+  position: relative;
+  height: 560px;
+  flex-shrink: 0;
+}
+.matterhornPopup {
+  position: relative;
+  border-radius: var(--br-5xs);
+  background-color: var(--primary-contrast);
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+@media screen and (max-width: 650px) {
+  .video {
+    height: 50.625vw !important;
+  }
+  .matterhornPopup {
+    padding: var(--padding-3xs);
+    box-sizing: border-box;
+  }
+}
